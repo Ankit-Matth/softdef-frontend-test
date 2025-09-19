@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <nav className="w-full bg-white shadow-xs border-b-2 border-gray-50">
+    <nav className="w-full bg-white shadow-xs border-b-2 border-gray-100">
       <div className="mx-auto px-5">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">

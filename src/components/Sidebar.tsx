@@ -34,12 +34,12 @@ const Sidebar: React.FC = () => {
   ];
 
   const colorOptions: ColorOption[] = [
-    { id: 'blue', color: '#3B82F6' },
-    { id: 'red', color: '#EF4444' },
-    { id: 'black', color: '#000000' },
-    { id: 'yellow', color: '#EAB308' },
-    { id: 'pink', color: '#EC4899' },
-    { id: 'light-pink', color: '#F8BBD9' }
+    { id: 'blue', color: '#006CFF' },
+    { id: 'red', color: '#FC3E39' },
+    { id: 'black', color: '#171717' },
+    { id: 'yellow', color: '#FFF600' },
+    { id: 'pink', color: '#FF00B4' },
+    { id: 'light-pink', color: '#EFDFDF' }
   ];
 
   const brandOptions: BrandOption[] = [
@@ -58,10 +58,10 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="w-1/3 p-6 min-h-screen">
-      <div className="mb-8 p-4 bg-gray-50">
-        <h2 className="text-xl font-semibold text-gray-900 mb-6">Hot Deals</h2>
-        <div className="space-y-4">
+    <div className="w-1/3 pl-6 pr-0 pt-5 min-h-screen">
+      <div className="mb-8 px-4 py-8 bg-[#f6f7f8]">
+        <h2 className="text-lg font-semibold text-gray-900 mb-8">Hot Deals</h2>
+        <div className="space-y-10">
           {hotDeals.map((deal, index) => (
             <div key={index} className="flex justify-between items-center">
               <span 
@@ -79,10 +79,10 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      <div className="mb-8 p-4 bg-gray-50">
+      <div className="mb-8 pl-6 py-8 pr-4 bg-[#f6f7f8]">
         <h2 className="text-xl font-semibold text-gray-900 mb-6">PRICES</h2>
         <div className="mb-4">
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex flex-row justify-between mb-4 mr-8">
             <span className="text-base text-gray-700">Ranger:</span>
             <span className="text-base text-gray-700">
               ${priceRange[0]} - ${priceRange[1]}
@@ -102,25 +102,33 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      <div className="mb-8 p-4 bg-gray-50">
-        <h2 className="text-xl font-semibold text-gray-900 mb-6">COLOR</h2>
-        <div className="flex flex-wrap gap-3">
+      <div className="mb-8 p-6 pb-9 bg-[#f6f7f8]">
+        <h2 className="text-lg font-semibold text-gray-800 mb-6">COLOR</h2>
+        <div className="flex flex-row gap-4">
           {colorOptions.map((color) => (
-            <button
+            <div
               key={color.id}
-              onClick={() => handleColorSelect(color.id)}
-              className={`w-5 h-5 rounded-full border-2 transition-all duration-200 ${
+              className={`flex items-center justify-center rounded-full w-7 h-7 p-0.5 ${
                 selectedColors.includes(color.id)
-                  ? 'border-gray-800 scale-110 shadow-lg'
-                  : 'border-gray-300 hover:border-gray-400'
+                  ? "border border-blue-400"
+                  : ""
               }`}
-              style={{ backgroundColor: color.color }}
-            />
+            >
+              <button
+                onClick={() => handleColorSelect(color.id)}
+                className={`rounded-full transition-all duration-200 ${
+                  selectedColors.includes(color.id)
+                    ? "w-4 h-4"
+                    : "w-6 h-6"
+                }`}
+                style={{ backgroundColor: color.color }}
+              />
+            </div>
           ))}
         </div>
       </div>
 
-      <div className="mb-8 p-4 bg-gray-50">
+      <div className="mb-8 px-6 py-7 bg-[#f6f7f8]">
         <h2 className="text-xl font-semibold text-gray-900 mb-6">BRAND</h2>
         <div className="space-y-4">
           {brandOptions.map((brand, index) => (
@@ -140,7 +148,7 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center p-4 bg-gray-50">
+      <div className="text-center p-4 bg-[#f6f7f8]">
         <h2 className="text-lg font-semibold text-gray-900">MORE</h2>
       </div>
     </div>

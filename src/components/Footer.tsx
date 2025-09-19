@@ -29,10 +29,10 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-10 mt-6">
               <Link href="#">
-                <img src="facebook.svg" alt="Facebook" />
+                <img src="/footer/facebook.svg" alt="Facebook" />
               </Link>
               <Link href="#">
-               <img src="twitter.svg" alt="Twitter" />
+               <img src="/footer/twitter.svg" alt="Twitter" />
               </Link>
             </div>
           </div>
@@ -77,13 +77,13 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <img
-              src="/western-union.png"
+              src="/footer/western-union.png"
               alt="Western Union"
               className="h-6"
             />
-            <img src="/master-card.png" alt="Master Card" className="h-6" />
-            <img src="/paypal.png" alt="Paypal" className="h-6" />
-            <img src="/visa.png" alt="Visa" className="h-6" />
+            <img src="/footer/master-card.png" alt="Master Card" className="h-6" />
+            <img src="/footer/paypal.png" alt="Paypal" className="h-6" />
+            <img src="/footer/visa.png" alt="Visa" className="h-6" />
           </div>
         </div>
       </div>
