@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-export const Pagination = () => {
-  const currentPage = 3;
+interface PaginationProps {
+  currentPage: number;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+  totalItems: number;
+  itemsPerPage: number;
+}
+
+export const Pagination: React.FC<PaginationProps> = ({
+  currentPage,
+  setCurrentPage,
+  totalItems,
+  itemsPerPage,
+}) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   return (
     <div className="flex justify-center items-center bg-[#f6f7f8] rounded gap-6 mb-8 mt-1">
-      {[1, 2, 3, 4, 5].map((num) => (
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
         <div
           key={num}
-          className={`w-16 h-16 flex items-center justify-center rounded-xs ${
-            num === currentPage
-              ? 'bg-[#3db8fd] text-white'
-              : 'text-black'
+          onClick={() => setCurrentPage(num)}
+          className={`w-16 h-16 flex items-center justify-center rounded-xs cursor-pointer ${
+            num === currentPage ? 'bg-[#3db8fd] text-white' : 'text-black'
           }`}
         >
           {num}
