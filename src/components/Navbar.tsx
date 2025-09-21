@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image'
 import { Menu, X, ShoppingCart } from "lucide-react";
 
 interface NavbarProps {
@@ -10,7 +11,6 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({
-  cartItemCount = 0,
   cartTotal = "$0.00",
 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,11 +28,11 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="mx-auto px-5">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="Logo" className="w-12 h-10" />
+            <Image src="/logo.svg" alt="Logo" width={48} height={40} />
             <span className="text-xl font-bold text-gray-900">E-Comm</span>
           </div>
 
-          <div className="hidden md:block text-lg">
+          <div className="hidden lg:block text-lg">
             <div className="ml-10 flex items-baseline space-x-16">
               {navItems.map((item) => (
                 <Link
@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
@@ -74,8 +74,8 @@ const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {menuOpen && (
-        <div className="absolute top-16 w-full z-50 md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border border-gray-300">
+        <div className="absolute top-16 w-full z-100 lg:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 mx-0.5 sm:px-3 bg-white border border-gray-300">
             {navItems.map((item) => (
               <Link
                 key={item.name}

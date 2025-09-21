@@ -28,7 +28,7 @@ const products: Product[] = [
     discountPrice: 18.19,
     ratingValue: 4.1,
     ratingCount: 89,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["black", "red"],
     category: "Shoes",
     imageUrl: "/products/shoe-bottom.png",
@@ -41,7 +41,7 @@ const products: Product[] = [
     discountPrice: 13.42,
     ratingValue: 3.6,
     ratingCount: 77,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["blue"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -54,7 +54,7 @@ const products: Product[] = [
     discountPrice: 20.91,
     ratingValue: 4.7,
     ratingCount: 142,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["yellow", "wheat", "black"],
     category: "Shoes",
     imageUrl: "/products/shoe-left.png",
@@ -67,7 +67,7 @@ const products: Product[] = [
     discountPrice: 17.42,
     ratingValue: 3.9,
     ratingCount: 64,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["pink", "blue"],
     category: "Bags",
     imageUrl: "/products/bag-horizontal.png",
@@ -80,7 +80,7 @@ const products: Product[] = [
     discountPrice: 10.95,
     ratingValue: 3.5,
     ratingCount: 58,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["red"],
     category: "Shoes",
     imageUrl: "/products/shoe-back.png",
@@ -93,7 +93,7 @@ const products: Product[] = [
     discountPrice: 18.96,
     ratingValue: 4.3,
     ratingCount: 134,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["black", "yellow"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -106,7 +106,7 @@ const products: Product[] = [
     discountPrice: 15.21,
     ratingValue: 3.8,
     ratingCount: 71,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["blue", "wheat"],
     category: "Shoes",
     imageUrl: "/products/shoe-right.png",
@@ -119,7 +119,7 @@ const products: Product[] = [
     discountPrice: 17.09,
     ratingValue: 4.0,
     ratingCount: 98,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["black", "pink", "yellow"],
     category: "Bags",
     imageUrl: "/products/bag-horizontal.png",
@@ -132,7 +132,7 @@ const products: Product[] = [
     discountPrice: 16.37,
     ratingValue: 3.7,
     ratingCount: 80,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["red", "blue"],
     category: "Shoes",
     imageUrl: "/products/shoe-bottom.png",
@@ -145,7 +145,7 @@ const products: Product[] = [
     discountPrice: 18.6,
     ratingValue: 4.6,
     ratingCount: 151,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["yellow"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -158,7 +158,7 @@ const products: Product[] = [
     discountPrice: 22.14,
     ratingValue: 4.9,
     ratingCount: 160,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["black", "wheat", "pink"],
     category: "Shoes",
     imageUrl: "/products/shoe-left.png",
@@ -171,7 +171,7 @@ const products: Product[] = [
     discountPrice: 12.42,
     ratingValue: 3.4,
     ratingCount: 50,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["blue"],
     category: "Shoes",
     imageUrl: "/products/shoe-right.png",
@@ -184,7 +184,7 @@ const products: Product[] = [
     discountPrice: 17.84,
     ratingValue: 4.2,
     ratingCount: 117,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["red", "black"],
     category: "Bags",
     imageUrl: "/products/bag-horizontal.png",
@@ -197,7 +197,7 @@ const products: Product[] = [
     discountPrice: 16.57,
     ratingValue: 4.1,
     ratingCount: 95,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["blue", "yellow"],
     category: "Shoes",
     imageUrl: "/products/shoe-back.png",
@@ -210,7 +210,7 @@ const products: Product[] = [
     discountPrice: 19.97,
     ratingValue: 4.4,
     ratingCount: 121,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["pink", "wheat"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -223,7 +223,7 @@ const products: Product[] = [
     discountPrice: 13.04,
     ratingValue: 3.6,
     ratingCount: 69,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["yellow"],
     category: "Shoes",
     imageUrl: "/products/shoe-left.png",
@@ -236,7 +236,7 @@ const products: Product[] = [
     discountPrice: 15.67,
     ratingValue: 4.3,
     ratingCount: 126,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["black", "red"],
     category: "Shoes",
     imageUrl: "/products/shoe-right.png",
@@ -249,7 +249,7 @@ const products: Product[] = [
     discountPrice: 23.06,
     ratingValue: 4.7,
     ratingCount: 153,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["blue", "pink"],
     category: "Bags",
     imageUrl: "/products/bag-horizontal.png",
@@ -262,7 +262,7 @@ const products: Product[] = [
     discountPrice: 10.96,
     ratingValue: 3.5,
     ratingCount: 59,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["red", "yellow", "wheat"],
     category: "Shoes",
     imageUrl: "/products/shoe-back.png",
@@ -275,7 +275,7 @@ const products: Product[] = [
     discountPrice: 18.72,
     ratingValue: 4.1,
     ratingCount: 111,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["black"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -288,7 +288,7 @@ const products: Product[] = [
     discountPrice: 16.65,
     ratingValue: 3.9,
     ratingCount: 82,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["blue", "yellow"],
     category: "Shoes",
     imageUrl: "/products/shoe-bottom.png",
@@ -301,7 +301,7 @@ const products: Product[] = [
     discountPrice: 19.84,
     ratingValue: 4.5,
     ratingCount: 128,
-    offerType: "HotDeals",
+    offerType: "Hot Deals",
     colors: ["pink"],
     category: "Bags",
     imageUrl: "/products/bag-horizontal.png",
@@ -314,7 +314,7 @@ const products: Product[] = [
     discountPrice: 20.62,
     ratingValue: 4.8,
     ratingCount: 165,
-    offerType: "FlashSales",
+    offerType: "Flash Sales",
     colors: ["red", "black", "blue"],
     category: "Shoes",
     imageUrl: "/products/shoe-left.png",
@@ -327,7 +327,7 @@ const products: Product[] = [
     discountPrice: 11.47,
     ratingValue: 3.7,
     ratingCount: 66,
-    offerType: "MegaDiscount",
+    offerType: "Mega Discount",
     colors: ["yellow", "wheat"],
     category: "Bags",
     imageUrl: "/products/bag-vertical.png",
@@ -339,7 +339,7 @@ const [displayedProducts, setDisplayedProducts] = useState<Product[]>([...produc
 const [filteredProducts, setFilteredProducts] = useState<Product[]>([...products]);
 
 const [selectedSpecialOffer, setSelectedSpecialOffer] = useState<string>("");
-const [selectedPrice, setSelectedPrice] = useState<[number, number]>([0, 26]);
+const [selectedPrice, setSelectedPrice] = useState<[number, number]>([3, 26]);
 const [selectedColor, setSelectedColor] = useState<string>("");
 const [selectedBrand, setSelectedBrand] = useState<string>("");
 const [selectedCategory, setSelectedCategory] = useState<string>("");
@@ -356,7 +356,7 @@ useEffect(() => {
   if (selectedCategory) temp = temp.filter(p => p.category === selectedCategory);
   if (selectedBrand) temp = temp.filter(p => p.name.includes(selectedBrand));
   if (selectedColor) temp = temp.filter(p => p.colors.includes(selectedColor));
-  if (selectedPrice) temp = temp.filter(p => p.price >= selectedPrice[0] && p.price <= selectedPrice[1]);
+  if (selectedPrice) temp = temp.filter(p => p.discountPrice >= selectedPrice[0] && p.discountPrice <= selectedPrice[1]);
   if (selectedSpecialOffer) temp = temp.filter(p => p.offerType === selectedSpecialOffer);
 
   if (selectedSortBy) {
@@ -409,9 +409,9 @@ useEffect(()=>{
   return (
     <>
     <Navbar />
-    <div className="flex flex-row gap-x-3">
+    <div className="flex flex-row">
       <Sidebar 
-        filteredProducts={filteredProducts}
+        allProducts={products}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
         selectedBrand={selectedBrand}

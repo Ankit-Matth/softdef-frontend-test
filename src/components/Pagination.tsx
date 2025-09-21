@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 interface PaginationProps {
   currentPage: number;
@@ -16,7 +16,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   return (
-    <div className="flex justify-center items-center bg-[#f6f7f8] rounded gap-6 mb-8 mt-1">
+    <div className="flex justify-center items-center bg-[#f6f7f8] rounded gap-6 mb-8 mt-3">
       {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
         <div
           key={num}

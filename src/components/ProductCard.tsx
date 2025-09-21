@@ -1,5 +1,6 @@
 import React from "react";
 import { Product } from "@/app/page";
+import Image from 'next/image'
 
 interface ProductCardProps {
   product: Product;
@@ -7,9 +8,9 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const offerMap: Record<string, { color: string; label: string }> = {
-    HotDeals: { color: "#FF4858", label: "HOT" },
-    MegaDiscount: { color: "#73ff48", label: "Mega" },
-    FlashSales: { color: "#a6b935", label: "Flash" },
+    "Hot Deals": { color: "#FF4858", label: "HOT" },
+    "Mega Discount": { color: "#73ff48", label: "Mega" },
+    "Flash Sales": { color: "#a6b935", label: "Flash" },
   };
 
   return (
@@ -17,7 +18,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="relative">
         {product.offerType && offerMap[product.offerType] && (
           <div
-            className="absolute top-2 left-2 text-white py-1 px-3 rounded font-semibold text-sm"
+            className="absolute top-0 left-0 text-white py-1 px-3 rounded font-semibold text-sm"
             style={{ backgroundColor: offerMap[product.offerType].color }}
           >
             {offerMap[product.offerType].label}
@@ -36,14 +37,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         )}
 
-        <img
-          className="w-full h-56 object-cover"
+        <Image
+          width={300}
+          height={256}
+          className="w-full h-64 object-cover"
           src={product.imageUrl}
           alt={product.name}
         />
       </div>
 
-      <div className="mt-4 bg-white py-3 px-2 border border-gray-100 border-t-0">
+      <div className="pt-4 bg-white py-3 px-2 border border-gray-100 border-t-0">
         <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
 
         <div className="flex flex-row mt-2 items-center justify-center space-x-1">
@@ -57,7 +60,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
 
         <div className="mt-2 flex items-center justify-center space-x-2">
-          <span className="text-xl font-bold text-[#40BFFF]">${product.discountPrice}</span>
+          <span className="text-lg font-bold text-[#40BFFF]">${product.discountPrice}</span>
           <span className="text-sm text-gray-500 line-through">${product.price}</span>
           <span className="text-xs text-red-500">{product.discountPercent}% Off</span>
         </div>
@@ -72,10 +75,18 @@ interface ProductGridProps {
 
 const ProductGrid: React.FC<ProductGridProps> = ({ displayedProducts }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
-      {displayedProducts.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 my-8">
+      {displayedProducts.length > 0 ? (
+        displayedProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))
+      ) : (
+        <div className="col-span-full flex items-center justify-center p-10 bg-white border shadow rounded">
+          <p className="text-gray-600 text-lg font-medium text-center">
+            No product found. Please choose another filter.
+          </p>
+        </div>
+      )}
     </div>
   );
 };

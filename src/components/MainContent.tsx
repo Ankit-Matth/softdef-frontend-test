@@ -35,7 +35,7 @@ const MainContent: React.FC<MainContentProps> = ({
   itemsPerPage,
 }) => {
   return (
-    <div className='flex flex-col w-full px-3.5 pt-5 text-center bg-white'>
+    <div className='flex flex-col w-full px-3.5 pt-6 text-center bg-white'>
       <Badge />
       <FilterPanel 
         filteredProducts={filteredProducts}
