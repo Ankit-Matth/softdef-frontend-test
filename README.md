@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SoftDef Frontend Intern Test
 
-## Getting Started
+> **Note**: I tried to replicate the actual Figma UI as closely as possible but also added a few extra tweaks to ensure full functionality. All features are implemented while keeping the design pixel-perfect and responsive across desktop, tablet, and mobile. 
 
-First, run the development server:
+This is a simple **Next.js** web application built as part of an assignment. It replicates the product listing screen from Figma with **clean, reusable components**, **pixel-accurate UI**, and **fully working features** like **filters, sorting, and pagination**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Live Demo: https://softdef-frontend-test.vercel.app/
+
+https://github.com/user-attachments/assets/adf7708d-164c-459f-a96a-381c543602ff
+
+## 🛠️ Tech Stack
+- **Next.js**
+- **Tailwind CSS**
+- **TypeScript**
+
+## 📂 Project Structure
+```
+public/ # Static assets (images, icons, etc.)
+|
+src/
+  ├── app/ # Main app entry, pages, and layout
+  ├── components/ # Reusable UI components
+├── package.json # Project dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You must have **Node.js** and **npm** installed before setting up this project.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Ankit-Matth/softdef-frontend-test.git
+cd softdef-frontend-test
+```
 
-## Learn More
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3️⃣ Run the Development Server
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app will be available at:
+👉 http://localhost:3000
